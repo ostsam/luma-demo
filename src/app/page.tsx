@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import styles from './LumaEvents.module.css';
+import Navbar from './components/Navbar';
 
 interface Event {
   id: string;
@@ -111,10 +113,12 @@ export default function Home() {
   });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.gradientBg} />
+    <>
+      <Navbar />
+      <div className={styles.container}>
+        <div className={styles.gradientBg} />
 
-      <div className={styles.content}>
+        <div className={styles.content}>
         {/* Header */}
         <header className={styles.header}>
           <div className={styles.headerContent}>
@@ -172,7 +176,13 @@ export default function Home() {
               <div className={styles.eventCardInner}>
                 {event.image && (
                   <div className={styles.eventImage}>
-                    <img src={event.image} alt={event.title} />
+                    <Image
+                      src={event.image}
+                      alt={event.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      style={{ objectFit: 'cover' }}
+                    />
                     <div className={styles.eventImageOverlay} />
                   </div>
                 )}
@@ -236,7 +246,8 @@ export default function Home() {
             <p>No events found matching your criteria</p>
           </div>
         )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

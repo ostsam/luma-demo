@@ -1,0 +1,140 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navContent {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.logo svg {
+  fill: currentColor;
+  transition: color 0.2s;
+}
+
+.logo:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Spacer */
+.spacer {
+  flex: 1;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.time {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.exploreLink {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.exploreLink:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.exploreLink svg {
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.exploreLink:hover svg {
+  opacity: 1;
+}
+
+.signIn {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.signIn:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navContent {
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .time {
+    display: none;
+  }
+
+  .actions {
+    gap: 16px;
+  }
+
+  .exploreLink {
+    font-size: 12px;
+  }
+
+  .signIn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navContent {
+    height: 44px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .exploreLink {
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .signIn {
+    font-size: 11px;
+  }
+}
