@@ -18,7 +18,7 @@ const mockEvents: Event[] = [
   {
     id: '1',
     title: 'AI & Machine Learning Summit 2025',
-    date: 'Mar 15, 2025',
+    date: 'Oct 15, 2025',
     time: '2:00 PM PST',
     location: 'San Francisco, CA',
     attendees: 234,
@@ -28,7 +28,7 @@ const mockEvents: Event[] = [
   {
     id: '2',
     title: 'Web3 Developer Workshop',
-    date: 'Mar 18, 2025',
+    date: 'Oct 18, 2025',
     time: '6:00 PM PST',
     location: 'Virtual',
     attendees: 156,
@@ -38,7 +38,7 @@ const mockEvents: Event[] = [
   {
     id: '3',
     title: 'Startup Pitch Night',
-    date: 'Mar 20, 2025',
+    date: 'Oct 20, 2025',
     time: '7:00 PM PST',
     location: 'Palo Alto, CA',
     attendees: 89,
@@ -48,7 +48,7 @@ const mockEvents: Event[] = [
   {
     id: '4',
     title: 'Design Systems Masterclass',
-    date: 'Mar 22, 2025',
+    date: 'Oct 22, 2025',
     time: '10:00 AM PST',
     location: 'San Francisco, CA',
     attendees: 178,
@@ -58,7 +58,7 @@ const mockEvents: Event[] = [
   {
     id: '5',
     title: 'Cloud Architecture Forum',
-    date: 'Mar 25, 2025',
+    date: 'Oct 25, 2025',
     time: '3:00 PM PST',
     location: 'Seattle, WA',
     attendees: 312,
@@ -68,7 +68,7 @@ const mockEvents: Event[] = [
   {
     id: '6',
     title: 'Product Management Meetup',
-    date: 'Mar 27, 2025',
+    date: 'Oct 27, 2025',
     time: '6:30 PM PST',
     location: 'San Francisco, CA',
     attendees: 145,
@@ -78,7 +78,7 @@ const mockEvents: Event[] = [
   {
     id: '7',
     title: 'Cybersecurity Best Practices',
-    date: 'Mar 29, 2025',
+    date: 'Oct 29, 2025',
     time: '1:00 PM PST',
     location: 'Virtual',
     attendees: 267,
@@ -88,7 +88,7 @@ const mockEvents: Event[] = [
   {
     id: '8',
     title: 'Tech Founders Dinner',
-    date: 'Apr 1, 2025',
+    date: 'Nov 1, 2025',
     time: '7:00 PM PST',
     location: 'San Francisco, CA',
     attendees: 42,
