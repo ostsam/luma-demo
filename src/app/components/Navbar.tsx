@@ -3,7 +3,11 @@
 import { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
 
-export default function Navbar() {
+interface NavbarProps {
+  onInteraction?: () => void;
+}
+
+export default function Navbar({ onInteraction }: NavbarProps = {}) {
   const [currentTime, setCurrentTime] = useState('');
 
   useEffect(() => {
@@ -40,15 +44,15 @@ export default function Navbar() {
         {/* Right Actions */}
         <div className={styles.actions}>
           <span className={styles.time}>{currentTime}</span>
-          <a href="https://lu.ma/discover" className={styles.exploreLink}>
+          <button onClick={onInteraction} className={styles.exploreLink}>
             Explore Events
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </a>
-          <a href="https://lu.ma/signin" className={styles.signIn}>
+          </button>
+          <button onClick={onInteraction} className={styles.signIn}>
             Sign In
-          </a>
+          </button>
         </div>
       </div>
     </nav>
